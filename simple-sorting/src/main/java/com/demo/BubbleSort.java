@@ -4,9 +4,14 @@ package com.demo;
  * 冒泡排序实现
  *
  * 基本思想是:两两比较相邻记录的关键字,如果反序则交换
- * 冒泡排序时间复杂度最好的情况为O(n),最坏的情况是O(n^2)
+ *
+ * 最坏时间复杂度 O(n^2)
+ * 最优时间复杂度 O(n)
+ * 平均时间复杂度 O(n^2)
+ * 空间复杂度	总共 O(n)，需要辅助空间 O(1)
  *
  * 简单来说，每次循环把最大的数放到最后，把比较小的数不断往前移
+ * https://zh.wikipedia.org/wiki/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F
  * @author forip
  */
 public class BubbleSort {
