@@ -16,22 +16,22 @@ package com.demo;
  */
 public class InsertionSort {
     public static void main(String[] args) {
-        int[] testIntegers = {1,12,33,4,2,1,4};
-        int[] resultArr = insertionSort(testIntegers);
-        for (int arr : resultArr) {
+        int[] testArrs = {1,12,33,4,2,1,4};
+        int[] resultArrs = insertionSort(testArrs);
+        for (int arr : resultArrs) {
             System.out.print(arr + " ");
         }
     }
-    private static int[] insertionSort(int[] arr) {
-        for (int i = 1; i < arr.length; i++ ) {
-            int temp = arr[i];
+    private static int[] insertionSort(int[] arrs) {
+        for (int i = 1; i < arrs.length; i++ ) {
+            int temp = arrs[i];
             int j = i - 1;
             //如果将赋值放到下一行的for循环内, 会导致在第10行出现j未声明的错误
-            for (; j >= 0 && arr[j] > temp; j-- ) {
-                arr[j + 1] = arr[j];
+            for (; j >= 0 && arrs[j] > temp; j-- ) {
+                arrs[j + 1] = arrs[j];
                 }
-            arr[j + 1] = temp;
+            arrs[j + 1] = temp;
             }
-        return arr;
+        return arrs;
     }
 }

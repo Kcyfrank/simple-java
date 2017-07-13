@@ -25,5 +25,6 @@
 
   <modules>
     <module>simple-sorting</module>
+    <module>simple-source</module>
   </modules>
 </project>

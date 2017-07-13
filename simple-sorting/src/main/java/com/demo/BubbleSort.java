@@ -17,29 +17,29 @@ package com.demo;
 public class BubbleSort {
 
     public static void main(String[] args) {
-        int[] testIntegers = {1,12,33,4,2,1,4};
-        int[] resultArr = bubblesort(testIntegers);
+        int[] testArrs = {1,12,33,4,2,1,4};
+        int[] resultArr = bubblesort(testArrs);
         for (int arr : resultArr) {
             System.out.print(arr + " ");
         }
     }
 
-    private static int[] bubblesort(int[] arrayNeedSort) {
-        int i, j, len = arrayNeedSort.length;
+    private static int[] bubblesort(int[] arrs) {
+        int i, j, len = arrs.length;
         for (i = 0; i < len - 1; i++) {
             for (j = 0; j < len - 1 - i; j++) {
-                if (arrayNeedSort[j] > arrayNeedSort[j + 1]) {
-                    swap(arrayNeedSort, j);
+                if (arrs[j] > arrs[j + 1]) {
+                    swap(arrs, j);
                 }
             }
         }
-        return arrayNeedSort;
+        return arrs;
     }
 
-    private static void swap(int[] arrayNeedSort, int j) {
+    private static void swap(int[] arrs, int j) {
         int temp;
-        temp = arrayNeedSort[j];
-        arrayNeedSort[j] = arrayNeedSort[j + 1];
-        arrayNeedSort[j + 1] = temp;
+        temp = arrs[j];
+        arrs[j] = arrs[j + 1];
+        arrs[j + 1] = temp;
     }
 }
